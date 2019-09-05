@@ -18,9 +18,9 @@ app.use(bodyParser.urlencoded({extended:false}))
 app.use(bodyParser.json())
 app.use(bodyParser.text())
 lib.plugRouters(Routers,app,"/api/")
-
+// API comment
 app.get("/",(req,res) => {
-  res.send("Welcome to Pledge counter API")
+  res.send("Welcome to API")
 })
 app.get("/*",(req,res) => {
   res.send(`Invalid GET route "${req.path}"`)
