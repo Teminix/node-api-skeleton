@@ -10,7 +10,10 @@
     "body-parser": "*",
     "cors": "^2.8.5",
     "express": "*",
-    "google-spreadsheet": "^2.0.8"
+    "express-session": "*",
+    "mongodb": "*",
+    "connect-mongo": "*",
+    "cookie-parser": "*"
   },
   "author": "",
   "license": "ISC"
