@@ -14,7 +14,7 @@ router.get("/getCount",(req,res) => {
   getSheetRowLength(res)
 })
 router.post("/",(req,res) => {
-  res.send("Welcome to main API post route")
+  res.send("Welcome to API post route")
 })
 router.get("/*",(req,res) => {
   res.send(`Invalid GET route "${req.path}"`)
