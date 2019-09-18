@@ -3,7 +3,6 @@ const l = console.log;
 const bodyParser = require("body-parser");
 const app = express();
 const cors = require('cors');
-// const {google} = require("googleapis")
 const rocket = require("./core/rocket");
 const lib = require("./core/lib")
 const Routers = {
@@ -18,7 +17,6 @@ app.use(bodyParser.urlencoded({extended:false}))
 app.use(bodyParser.json())
 app.use(bodyParser.text())
 lib.plugRouters(Routers,app,"/api/")
-// API comment
 app.get("/",(req,res) => {
   res.send("Welcome to API")
 })
