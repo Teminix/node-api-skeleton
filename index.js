@@ -4,7 +4,6 @@ const bodyParser = require("body-parser");
 const app = express();
 const fs = require('fs')
 const cors = require('cors');
-// const {google} = require("googleapis")
 const rocket = require("./core/rocket");
 const lib = require("./core/lib")
 const Routers = {

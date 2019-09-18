@@ -7,12 +7,7 @@ const l = console.log;
 router.get("/",(req,res) => {
   res.send("Welcome to main API route")
 })
-router.get("/rng",(req,res) => {
-  res.send(lib.RNG(4,14).toString())
-})
-router.get("/getCount",(req,res) => {
-  getSheetRowLength(res)
-})
+
 router.post("/",(req,res) => {
   res.send("Welcome to API post route")
 })
