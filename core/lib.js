@@ -9,4 +9,13 @@ const Lib = {
     return start+Math.floor(Math.random()*(end-start))
   }
 }
-module.exports = Lib
+module.exports = Lib;
+
+const {Cursor} = require("mongodb")
+Cursor.prototype.toDocs = async function(){
+  let array = [];
+  while(await this.hasNext()){
+    array.push(await this.next())
+  }
+  return array
+}
